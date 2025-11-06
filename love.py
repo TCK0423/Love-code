@@ -71,7 +71,7 @@ def heart_generate():
     def try_destroy():
         for small_window in all_small_window_generate:
             if small_window.winfo_exists():
-                print("嘗試執行window.detroy")
+                print("嘗試執行window.destroy")
                 window.after(1000, try_destroy)
                 return
             #偵測到還有視窗，重複請求try_destroy，又偵測到還有視窗，繼續重複請求，直到無視窗存在
